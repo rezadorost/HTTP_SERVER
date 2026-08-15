@@ -40,14 +40,20 @@ while True:
     print('path :', path)
     print('version :', version)
 
-
-    filename = routes.get(path)
-
-    if filename:
-        status = "200 OK"
+#permission methods
+    if method == "GET":
+        filename = routes.get(path)
+        #handle paths
+        if filename:
+            status = "200 OK"
+        else:
+            filename = "404.html"
+            status = "404 Not Found"
     else:
-        filename = "404.html"
-        status = "404 Not Found"
+        status = "405 Method Not Allowed"
+        filename = "405.html"
+
+
     
     with open(filename , "r")as file:
         body = file.read()
