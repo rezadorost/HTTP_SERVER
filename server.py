@@ -45,8 +45,6 @@ while True:
         key, value = line.split(": ", 1)
         headers[key]= value
 
-    print("HEADERS :")
-
     for key, value in headers.items():
         print(f"{key}: {value}")
 
