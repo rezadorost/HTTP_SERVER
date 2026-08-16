@@ -33,7 +33,27 @@ while True:
 
     request = request.decode()
 
-    first_line = request.splitlines()[0]
+    headers_part, body = request.split("\r\n\r\n", 1)
+
+    header_lines = headers_part.splitlines()
+
+    print("HEADERS :")
+
+    headers = {}
+
+    for line in header_lines[1:]:
+        key, value = line.split(": ", 1)
+        headers[key]= value
+
+    print("HEADERS :")
+
+    for key, value in headers.items():
+        print(f"{key}: {value}")
+
+    print('BODY :')
+    print(body)
+
+    first_line = header_lines[0]
     method , path , version = first_line.split()
 
     print('method :', method)
