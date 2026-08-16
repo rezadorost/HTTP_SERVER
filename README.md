@@ -168,7 +168,7 @@ This project will be continuously improved as I learn more about backend develop
 - [x] File-based HTML responses
 - [x] 404 handling
 - [x] 405 handling
-- [ ] HTTP headers
+- [x] HTTP headers
 - [ ] Request body
 - [ ] Content-Length
 - [ ] Query parameters
