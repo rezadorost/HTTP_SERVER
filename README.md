@@ -193,11 +193,11 @@ This project will be continuously improved as I learn more about backend develop
 
 ### Testing
 
-- [ ] Unit tests
-- [ ] HTTP request tests
-- [ ] Router tests
-- [ ] Error response tests
-- [ ] Integration tests
+- [x] Unit tests
+- [x] HTTP request tests
+- [x] Router tests
+- [x] Error response tests
+- [x] Integration tests
 
 ### Advanced Topics
 
