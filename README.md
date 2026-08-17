@@ -10,6 +10,7 @@ This project is intentionally built without external web frameworks.
 
 ## 🚀 Current Features
 
+- HTTP request header parsing
 - TCP socket server using Python `socket`
 - HTTP request receiving
 - HTTP request parsing
@@ -41,6 +42,9 @@ This project is intentionally built without external web frameworks.
 http_server/
 │
 ├── server.py
+├── tests/
+│   ├── __init__.py
+│   └── test_server.py
 ├── index.html
 ├── about.html
 ├── contact.html
@@ -194,10 +198,10 @@ This project will be continuously improved as I learn more about backend develop
 ### Testing
 
 - [x] Unit tests
-- [x] HTTP request tests
-- [x] Router tests
-- [x] Error response tests
-- [x] Integration tests
+- [ ] HTTP request tests
+- [ ] Router tests
+- [ ] Error response tests
+- [ ] Integration tests
 
 ### Advanced Topics
 
